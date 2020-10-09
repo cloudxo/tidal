@@ -1,9 +1,8 @@
-fn get_fr() {}
+use std::env;
 
-fn calc_max_bitrate() {}
+fn main() {
+    let args: Vec<String> = env::args().collect();
+    let url = &args[1];
 
-fn x264() {}
-
-fn main(url: String) {
     println!("url: {}", url);
 }
